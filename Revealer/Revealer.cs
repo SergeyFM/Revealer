@@ -19,8 +19,8 @@ namespace Revealer {
             string msg = message != "" ? $"\t{message}" : "";
             string file = sourceFilePath.Split(@"\").Last();
 
-            //Console.WriteLine($"{memberName} from {file} line {sourceLineNumber}" + msg);
-            Console.WriteLine($"{file}:{sourceLineNumber} \t {memberName}" + msg);
+            //Console.WriteLine($"{memberName}() from {file} line {sourceLineNumber}" + msg);
+            Console.WriteLine($"{file}:{sourceLineNumber} \t {memberName}()" + msg);
         }
 
     }
