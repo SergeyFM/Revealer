@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿global using Revealer;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Revealer {
     /// <summary>
     /// Reveals who called
-    /// new Revealer();
+    /// new Reveal();
     /// </summary>
-    public class Revealer {
-        public Revealer(string message = "",
+    public class Reveal {
+        public Reveal(string message = "",
                 [CallerMemberName] string memberName = "",
                 [CallerFilePath] string sourceFilePath = "",
                 [CallerLineNumber] int sourceLineNumber = 0) {
