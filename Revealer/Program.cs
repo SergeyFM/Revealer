@@ -6,6 +6,7 @@ namespace Revealer {
         static void Main(string[] args) {
 
             new Revealer();
+            new Revealer("Some random message");
 
         }
 
