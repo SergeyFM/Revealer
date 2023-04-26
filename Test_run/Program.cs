@@ -12,7 +12,7 @@ namespace Test_run {
                 new Reveal();
             }
 
-            new Reveal();
+            new Reveal(); // Revealer will only show the repeating message after the different call comes. Otherwise he doesn't know that the last call was the last one.
         }
     }
 }
