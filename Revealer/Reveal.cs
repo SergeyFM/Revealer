@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Revealer {
     /// <summary>
-    /// Reveals who called
+    /// Reveals who has called it.
     /// Insert "new Reveal();" anywhere. Used for debugging and research.
     /// </summary>
 
@@ -19,10 +19,12 @@ namespace Revealer {
 
             string file_lineN = $"{file}:{sourceLineNumber} \t {memberName}()";
             if (_last_file_lineN != file_lineN) {
-                if (_last_file_lineN_Count > 0) {
+
+                if (_last_file_lineN_Count > 0) 
                     Console.WriteLine($"* {_last_file_lineN} was called {_last_file_lineN_Count} times more]");
-                }
+                
                 if (VIP) Console.Write(">>>>>>>>>>>> "); // mark very important positions with a easy-to-notice line
+                
                 Console.WriteLine($"{file}:{sourceLineNumber} \t {memberName}()" + msg);
 
                 _last_file_lineN = file_lineN;
